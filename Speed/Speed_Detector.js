@@ -1,9 +1,7 @@
-const speedLimit = 70;
-let speed = 130;
-const speedInterval = 5;
-const pointsLimit = 12;
-
-function speedChecker() {
+function speedChecker(speed) {
+    const speedLimit = 70;
+    const pointsLimit = 12;
+    const speedInterval = 5;
     if (speed <= 70) {
         console.log("OK");
     }else if (speed > 70) {
@@ -14,4 +12,4 @@ function speedChecker() {
         }
     }
 }
-speedChecker()
+speedChecker(140)

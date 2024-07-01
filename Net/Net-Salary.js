@@ -1,11 +1,10 @@
 let basicSalary = 22000;
 let benefits = 2500;
-let paye = "Your PAYE is"
 
-const sum = basicSalary + benefits
-console.log(sum);
 //Monthly Taxable Pay
 function PayAsYouEarn() {
+    const sum = basicSalary + benefits
+    console.log(sum);
     if (sum <=24000) {
         console.log(sum * 0.1); 
     }else if (sum <= 32333) {
@@ -22,6 +21,8 @@ PayAsYouEarn()
 
 //NHIF deductuctions
 function NHIF() {
+    const sum = basicSalary + benefits
+    console.log(sum);
     if (sum <= 5999) {
         console.log(sum - 150);
     }else if (sum <= 7999) {
@@ -62,12 +63,12 @@ NHIF()
 
 //Housing Levy
 function housingLevy(a, b) {
-    return a * b;
-}
+    const sum = basicSalary + benefits
+    console.log(sum);
 console.log(housingLevy(sum, 0.15));
-
+}
 //Net Salary
 function NetSalary(a, b, c) {
-    return a - b - c
+    const NetSalary= (sum - PayAsYouEarn - housingLevy)
+    console.log(NetSalary);
 }
-console.log(NetSalary(sum, PayAsYouEarn, housingLevy));
