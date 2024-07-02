@@ -12,4 +12,4 @@ function speedChecker(speed) {
         }
     }
 }
-speedChecker(140)
+speedChecker(90)

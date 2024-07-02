@@ -1,24 +1,18 @@
 function gradeGenerator(marks) {
     let finalGrade;
-    let errormark;
-
-if (marks <= 40) {
-    finalGrade = "E"
-} else if (marks <= 49) {
-    finalGrade = "D"
-} else if (marks <= 59) {
-    finalGrade = "C"
-} else if (marks <= 79) {
-    finalGrade = "B"
-} else if (marks <= 100) {
-    finalGrade = "A"
-} else if (marks > 100 || marks < 0) {
-    errormark = "Please input a valid mark"
+    let errormark = "Invalid Grade"
+    if (marks > 100 || marks < 0) {
+      console.log(errormark); 
+    }else if (marks <= 40) {
+        console.log(finalGrade = "E");
+    }else if (marks <= 49) {
+        console.log(finalGrade = "D");
+    }else if (marks <= 59) {
+        console.log(finalGrade = "C");
+    }else if (marks <= 79) {
+        console.log(finalGrade = "B");
+    }else if (marks <= 100) {
+        console.log(finalGrade = "A");
+    }
 }
-if (marks > 100 || marks) {
-    console.log(errormark);
-}else{
-    console.log(finalGrade);
-}
-}
-gradeGenerator(-3)
+gradeGenerator()
